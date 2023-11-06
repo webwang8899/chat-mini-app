@@ -1,0 +1,424 @@
+.bg {
+  background: white url("../image/back.png") no-repeat;
+  background-color: #f6f6fbff;
+  background-size: 100%;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+  background-color: #fff;
+}
+
+.top_bg {
+  height: 80px;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .title {
+    font-size: 22px;
+    color: #fff;
+  }
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.list {
+  width: 100%;
+  border-radius: 16px 16px 0 0;
+  border: 0 solid #979797ff;
+  background: #fff;
+  padding: 20px;
+
+  .quickTest {
+    color: #1d2129;
+    margin-right: 4px;
+  }
+
+  .num {
+    color: #86909c;
+    font-size: 12px;
+  }
+
+  .testNum {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 14px;
+    background: #f7f8fa;
+    border-radius: 8px;
+    padding: 14px 10px;
+
+    .left {
+      display: flex;
+
+      .left_right {
+        display: flex;
+        flex-direction: column;
+        margin-left: 8px;
+
+        .left_right_title {
+          color: #1d2129;
+          font-size: 14px;
+          margin-bottom: 10px;
+        }
+
+        .left_right_time {
+          color: #86909c;
+          font-size: 12px;
+        }
+      }
+    }
+
+    .right {
+      display: flex;
+      align-items: center;
+      font-size: 10px;
+
+      .right_status {
+        width: 49px;
+        text-align: center;
+        // font-size: 10px;
+        transform: scale(0.83);
+        height: 19px;
+        line-height: 19px;
+        margin-right: 8px;
+      }
+
+      .progress {
+        background: #ff7e0033;
+        color: #fa922d;
+        border-radius: 139px;
+      }
+
+      .answerRight {
+        background: #32ca5533;
+        color: #32ca55;
+        border-radius: 139px;
+      }
+
+      .answerErr {
+        background: #fc4b4b33;
+        color: #f06767;
+        border-radius: 139px;
+      }
+    }
+  }
+}
+
+.two-btn {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/deep/ .van-dialog__confirm {
+  color: #4CBBBB !important
+}
+
+/deep/ .van-icon-cross {
+  color: #c8c9cc;
+  font-size: 22px;
+  cursor: pointer
+}
+
+/deep/ .van-popup {
+  width: 320px !important;
+  border-radius: 16px !important;
+}
+
+/deep/ .van-dialog__footer {
+  border-bottom-right-radius: 16px;
+  border-bottom-left-radius: 16px;
+}
+
+.single-choice {
+  margin: 20px;
+
+  #radio {
+    margin: auto;
+    width: 230px;
+    height: 44px;
+    color: black;
+    border-radius: 24px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: "PingFang SC";
+    line-height: 44px;
+    border: 1px solid #e5e6eeff;
+    margin-bottom: 20px;
+
+    /deep/ .van-radio__label {
+      width: 230px;
+      text-align: center;
+      line-height: 44px;
+    }
+  }
+
+  #radio[tabindex="0"] {
+    color: #fff;
+    border: 1px solid #4dd48eff;
+    background: #4dd48eff;
+  }
+
+  #radio[tabindex="0"] span,
+  #radio[tabindex="0"] /deep/ .van-radio__label {
+    color: #fff !important;
+  }
+
+  #radio /deep/ .van-radio__icon--round .van-icon {
+    display: none;
+  }
+
+  #checkbox {
+    margin: auto;
+    width: 230px;
+    height: 44px;
+    color: black;
+    border-radius: 24px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: "PingFang SC";
+    line-height: 44px;
+    border: 1px solid #e5e6eeff;
+    margin-bottom: 20px;
+
+    /deep/ .van-checkbox__label {
+      width: 230px;
+      text-align: center;
+      line-height: 44px;
+    }
+  }
+
+  #checkbox[aria-checked="true"] {
+    color: #fff;
+    border: 1px solid #4dd48eff;
+    background: #4dd48eff;
+  }
+
+  #checkbox[aria-checked="true"] span {
+    color: #fff !important;
+  }
+
+  #checkbox /deep/ .van-checkbox__icon .van-icon {
+    display: none;
+  }
+
+  .ku-xiao {
+    width: 100px;
+    height: 106.25px;
+    position: fixed;
+    left: 36%;
+    z-index: 2005;
+    top: -80px;
+
+  }
+
+
+
+
+  .title-x {
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    span {
+      height: 14px;
+      color: #1d2129ff;
+      font-size: 14px;
+      font-weight: 400;
+      font-family: "PingFang SC";
+      line-height: 14px;
+    }
+  }
+
+  .title-x2 {
+    height: 27px;
+    line-height: 27px;
+    text-align: right;
+
+  }
+
+  .wait-title {
+    height: 18px;
+    color: #172b4dff;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: "PingFang SC";
+    line-height: 18px;
+  }
+
+  .answer-title {
+    p {
+      margin-top: 16px;
+      height: 18px;
+      color: #172b4dff;
+      text-align: center;
+      font-size: 16px;
+      font-weight: 600;
+      font-family: "PingFang SC";
+      line-height: 18px;
+    }
+  }
+
+  .single-list {
+    margin: 24px 0;
+    max-height: 240px;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .judgment-list {
+    margin: 24px 0;
+    height: 140px;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .single-every {
+    margin: auto;
+    width: 230px;
+    height: 44px;
+    color: black;
+    border-radius: 24px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: "PingFang SC";
+    line-height: 44px;
+    border: 1px solid #e5e6eeff;
+    margin-bottom: 20px;
+  }
+
+  .state-every {
+    margin: auto;
+    width: 230px;
+    height: 44px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "PingFang SC";
+    line-height: 44px;
+    margin-bottom: 20px;
+
+    .gray-box {
+      padding-right: 8px;
+      border-radius: 24px;
+      background: #fafafaff;
+      color: black;
+      position: relative;
+      // display: flex;
+      // align-items: center;
+      // justify-content: space-between;
+    }
+
+    .green-box {
+      border-radius: 24px;
+      background: #edfaf0ff;
+      padding-right: 8px;
+      color: #4DD48E;
+      position: relative;
+    }
+
+    .red-box {
+      padding-right: 8px;
+      border-radius: 24px;
+      background: #FDF1F1;
+      color: #F07A7A;
+      position: relative;
+    }
+
+    .no-box {
+      padding-right: 8px;
+      border-radius: 24px;
+      background: #fafafaff;
+      color: black;
+      position: relative;
+    }
+
+    .white-font {
+      color: white
+    }
+
+    .self-bg {
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 2;
+      height: 44px;
+      border-radius: 454px 0 0 454px;
+    }
+
+    .white-bg {
+      position: absolute;
+      left: 8px;
+      top: 8px;
+      z-index: 4;
+      display: inline-block;
+      width: 28px;
+      height: 28px;
+      text-align: center;
+      line-height: 28px;
+      border-radius: 47px;
+      background: #ffffffff;
+
+      img {
+        margin-top: 5px;
+      }
+    }
+
+    .select-bg {
+      position: absolute;
+      right: 50px;
+      top: 0;
+      font-size: 14px;
+      z-index: 4;
+      display: inline-block;
+    }
+
+    .total-bg {
+      position: absolute;
+      right: 8px;
+      top: 0;
+      font-size: 14px;
+      z-index: 4;
+      display: inline-block;
+    }
+
+    .none-bg {
+      margin: 0 8px;
+      width: 28px;
+      height: 28px;
+      border-radius: 47px;
+      text-align: center;
+      line-height: 28px;
+      background: #ffffffff;
+    }
+  }
+
+  .single-active {
+    color: #fff;
+    border: 1px solid #4dd48eff;
+    background: #4dd48eff;
+  }
+
+}
+
+/deep/ .van-dialog {
+  overflow: visible !important;
+}
+
+.empty {
+  margin-top: 20vh;
+}
